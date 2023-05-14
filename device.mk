@@ -122,6 +122,10 @@ PRODUCT_PACKAGES += \
     init.insmod.sh \
     init.insmod.mt6833.cfg
 
+# Overlays
+PRODUCT_PACKAGES += \
+    WifiResOverlayGold
+
 # Permissions
 PRODUCT_COPY_FILES += \
     frameworks/native/data/etc/android.hardware.audio.low_latency.xml:$(TARGET_COPY_OUT_VENDOR)/etc/permissions/android.hardware.audio.low_latency.xml \
