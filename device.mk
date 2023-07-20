@@ -126,6 +126,7 @@ PRODUCT_PACKAGES += \
 
 # Overlays
 PRODUCT_PACKAGES += \
+    SettingsOverlayGold \
     WifiResOverlayGold
 
 # Permissions
