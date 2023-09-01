@@ -59,6 +59,9 @@ function blob_fixup {
         vendor/lib*/libaalservice.so)
             "$PATCHELF" --add-needed "libshim_sensors.so" "$2"
             ;;
+        vendor/etc/init/android.hardware.neuralnetworks@1.3-service-mtk-neuron.rc)
+            sed -i 's/start/enable/' "$2"
+            ;;
         vendor/lib*/hw/vendor.mediatek.hardware.pq@2.15-impl.so)
             "$PATCHELF" --replace-needed "libutils.so" "libutils-v32.so" "$2"
             "$PATCHELF" --add-needed "libshim_sensors.so" "$2"
