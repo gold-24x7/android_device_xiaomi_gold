@@ -1,1 +1,4 @@
+# Fingerprint
+vendor_internal_prop(vendor_fingerprint_prop)
+
 vendor_internal_prop(vendor_thermal_engine_prop)
