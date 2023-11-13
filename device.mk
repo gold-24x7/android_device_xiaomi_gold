@@ -33,7 +33,8 @@ PRODUCT_BUILD_SUPER_PARTITION := false
 # Rootdir
 PRODUCT_PACKAGES += \
     fstab.mt6833 \
-    fstab.mt6833.vendor_ramdisk
+    fstab.mt6833.vendor_ramdisk \
+    init.recovery.mt6833.rc
 
 # Soong namespaces
 PRODUCT_SOONG_NAMESPACES += \
