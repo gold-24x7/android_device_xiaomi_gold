@@ -1101,15 +1101,6 @@ service loghidlsysservice /system/bin/loghidlsysservice
     group system
     disabled
 
-# /*N17 code for HQ-291689 by miaozhichao at 2023/5/26 start
-service charger /system/bin/charger
-    class charger
-    critical
-    #seclabel u:r:charger:s0
-    group system graphics
-    seclabel u:r:healthd:s0
-# /*N17 code for HQ-291689 by miaozhichao at 2023/5/26 end
-
 # add meta_tst for ATM
 service meta_tst /vendor/bin/meta_tst
     class core
