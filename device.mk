@@ -200,6 +200,10 @@ PRODUCT_PACKAGES += \
     init.recovery.mt6833.rc \
     ueventd.mt6833.rc
 
+# Sensors
+PRODUCT_PACKAGES += \
+    libsensorndkbridge
+
 # Soong namespaces
 PRODUCT_SOONG_NAMESPACES += \
     $(LOCAL_PATH) \
