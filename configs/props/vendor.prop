@@ -174,3 +174,6 @@ ro.apk_verity.mode=2
 # Wi-Fi
 ro.vendor.wlan.chrdev=wmt_chrdev_wifi
 ro.vendor.wlan.gen=gen4m_6833
+
+# Zygote
+zygote.critical_window.minute=10
