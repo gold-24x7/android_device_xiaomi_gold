@@ -69,6 +69,9 @@ function blob_fixup {
             "$PATCHELF" --replace-needed "libutils.so" "libutils-v32.so" "$2"
             "$PATCHELF" --add-needed "libshim_sensors.so" "$2"
             ;;
+        vendor/bin/hw/android.hardware.media.c2@1.2-mediatek-64b)
+            "$PATCHELF" --add-needed "libstagefright_foundation-v33.so" "$2"
+            ;;
         vendor/lib*/libmtkcam_stdutils.so)
             "${PATCHELF}" --replace-needed "libutils.so" "libutils-v32.so" "$2"
             ;;
