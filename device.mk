@@ -93,7 +93,16 @@ PRODUCT_COPY_FILES += \
 PRODUCT_PACKAGES += \
     fstab.mt6833 \
     fstab.mt6833.vendor_ramdisk \
-    init.recovery.mt6833.rc
+    init.batterysecret.rc \
+    init.cgroup.rc \
+    init.connectivity.rc \
+    init.modem.rc \
+    init.mt6833.rc \
+    init.mt6833.usb.rc \
+    init.mtkgki.rc \
+    init.sensor_2_0.rc \
+    init.recovery.mt6833.rc \
+    ueventd.mt6833.rc
 
 # Soong namespaces
 PRODUCT_SOONG_NAMESPACES += \
