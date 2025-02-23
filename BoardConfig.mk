@@ -122,6 +122,10 @@ TARGET_BOARD_PLATFORM := mt6833
 BOARD_HAS_MTK_HARDWARE := true
 BOARD_VENDOR := xiaomi
 
+# Properties
+TARGET_SYSTEM_PROP += $(DEVICE_PATH)/configs/props/system.prop
+TARGET_VENDOR_PROP += $(DEVICE_PATH)/configs/props/vendor.prop
+
 # Recovery
 TARGET_RECOVERY_FSTAB := $(DEVICE_PATH)/init/fstab.mt6833
 TARGET_RECOVERY_PIXEL_FORMAT := "RGBX_8888"
