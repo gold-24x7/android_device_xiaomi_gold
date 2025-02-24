@@ -193,10 +193,10 @@ PRODUCT_PACKAGES += \
     fstab.mt6833 \
     fstab.mt6833.vendor_ramdisk \
     init.batterysecret.rc \
-    init.cgroup.rc \
     init.connectivity.rc \
     init.modem.rc \
     init.mt6833.rc \
+    init.mt6833.power.rc \
     init.mt6833.usb.rc \
     init.mtkgki.rc \
     init.sensor_2_0.rc \
