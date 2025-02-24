@@ -32,16 +32,18 @@ PRODUCT_AAPT_CONFIG := normal
 PRODUCT_AAPT_PREF_CONFIG := xxhdpi
 
 # Audio
+$(call soong_config_set,android_hardware_audio,run_64bit,true)
+
 PRODUCT_PACKAGES += \
-    android.hardware.audio@7.1-impl:32 \
-    android.hardware.audio.effect@7.0-impl:32 \
-    android.hardware.soundtrigger@2.3-impl:32 \
+    android.hardware.audio@7.1-impl:64 \
+    android.hardware.audio.effect@7.0-impl:64 \
+    android.hardware.soundtrigger@2.3-impl:64 \
     android.hardware.audio.service
 
 PRODUCT_PACKAGES += \
     audio.bluetooth.default \
     audio.usb.default \
-    android.hardware.bluetooth.audio-impl
+    android.hardware.bluetooth.audio-impl:64
 
 PRODUCT_PACKAGES += \
     MtkInCallService
