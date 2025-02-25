@@ -55,6 +55,9 @@ fi
 
 function blob_fixup {
     case "$1" in
+        system_ext/lib64/libsink.so)
+            "$PATCHELF" --add-needed "libshim_sink.so" "$2"
+            ;;
         vendor/lib*/hw/android.hardware.sensors@2.X-subhal-mediatek.so|\
         vendor/lib*/libaalservice.so|\
         vendor/bin/mnld)
