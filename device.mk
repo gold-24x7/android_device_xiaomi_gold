@@ -48,15 +48,15 @@ PRODUCT_AAPT_PREF_CONFIG := xxhdpi
 $(call soong_config_set,android_hardware_audio,run_64bit,true)
 
 PRODUCT_PACKAGES += \
-    android.hardware.audio@7.1-impl:64 \
-    android.hardware.audio.effect@7.0-impl:64 \
-    android.hardware.soundtrigger@2.3-impl:64 \
+    android.hardware.audio@7.1-impl \
+    android.hardware.audio.effect@7.0-impl \
+    android.hardware.soundtrigger@2.3-impl \
     android.hardware.audio.service
 
 PRODUCT_PACKAGES += \
     audio.bluetooth.default \
     audio.usb.default \
-    android.hardware.bluetooth.audio-impl:64
+    android.hardware.bluetooth.audio-impl
 
 PRODUCT_PACKAGES += \
     MtkInCallService
@@ -88,16 +88,16 @@ PRODUCT_PACKAGES += \
 
 # Camera
 PRODUCT_PACKAGES += \
-    android.frameworks.displayservice@1.0.vendor:64 \
-    android.hardware.camera.common@1.0.vendor:64 \
-    android.hardware.camera.device@3.2.vendor:64 \
-    android.hardware.camera.device@3.3.vendor:64 \
-    android.hardware.camera.device@3.4.vendor:64 \
-    android.hardware.camera.device@3.5.vendor:64 \
-    android.hardware.camera.device@3.6.vendor:64 \
-    android.hardware.camera.provider@2.4.vendor:64 \
-    android.hardware.camera.provider@2.5.vendor:64 \
-    android.hardware.camera.provider@2.6.vendor:64
+    android.frameworks.displayservice@1.0.vendor \
+    android.hardware.camera.common@1.0.vendor \
+    android.hardware.camera.device@3.2.vendor \
+    android.hardware.camera.device@3.3.vendor \
+    android.hardware.camera.device@3.4.vendor \
+    android.hardware.camera.device@3.5.vendor \
+    android.hardware.camera.device@3.6.vendor \
+    android.hardware.camera.provider@2.4.vendor \
+    android.hardware.camera.provider@2.5.vendor \
+    android.hardware.camera.provider@2.6.vendor
 
 # ConsumerIr
 PRODUCT_PACKAGES += \
@@ -134,16 +134,16 @@ PRODUCT_PACKAGES += \
 
 # Gatekeeper
 PRODUCT_PACKAGES += \
-    android.hardware.gatekeeper@1.0-impl:64 \
+    android.hardware.gatekeeper@1.0-impl \
     android.hardware.gatekeeper@1.0-service
 
 # GNSS
 PRODUCT_PACKAGES += \
-    android.hardware.gnss.measurement_corrections@1.1.vendor:64 \
-    android.hardware.gnss.visibility_control@1.0.vendor:64 \
-    android.hardware.gnss@1.1.vendor:64 \
-    android.hardware.gnss@2.1.vendor:64 \
-    android.hardware.gnss-V1-ndk_platform.vendor:64
+    android.hardware.gnss.measurement_corrections@1.1.vendor \
+    android.hardware.gnss.visibility_control@1.0.vendor \
+    android.hardware.gnss@1.1.vendor \
+    android.hardware.gnss@2.1.vendor \
+    android.hardware.gnss-V1-ndk_platform.vendor
 
 # Health
 PRODUCT_PACKAGES += \
@@ -156,9 +156,9 @@ PRODUCT_PACKAGES += \
 # HIDL
 PRODUCT_PACKAGES += \
     libhidltransport.vendor \
-    libhidltransport:64 \
+    libhidltransport \
     libhwbinder.vendor \
-    libhwbinder:64 \
+    libhwbinder \
     android.hidl.allocator@1.0.vendor
 
 # HotwordEnrollement app permissions
@@ -183,18 +183,18 @@ PRODUCT_COPY_FILES += \
 
 # Keymaster
 PRODUCT_PACKAGES += \
-    android.hardware.keymaster@4.0.vendor:64 \
-    libkeymaster_messages.vendor:64 \
-    libkeymaster_portable.vendor:64
+    android.hardware.keymaster@4.0.vendor \
+    libkeymaster_messages.vendor \
+    libkeymaster_portable.vendor
 
 # Keymint
 PRODUCT_PACKAGES += \
-    android.hardware.security.keymint-V1-ndk_platform.vendor:64 \
-    android.hardware.security.secureclock-V1-ndk_platform.vendor:64 \
-    android.hardware.security.sharedsecret-V1-ndk_platform.vendor:64 \
-    android.hardware.security.rkp-V1-ndk.vendor:64 \
-    lib_android_keymaster_keymint_utils.vendor:64 \
-    libkeymint.vendor:64
+    android.hardware.security.keymint-V1-ndk_platform.vendor \
+    android.hardware.security.secureclock-V1-ndk_platform.vendor \
+    android.hardware.security.sharedsecret-V1-ndk_platform.vendor \
+    android.hardware.security.rkp-V1-ndk.vendor \
+    lib_android_keymaster_keymint_utils.vendor \
+    libkeymint.vendor
 
 PRODUCT_PACKAGES += \
     android.hardware.hardware_keystore.xml
@@ -205,12 +205,12 @@ PRODUCT_PACKAGES += \
 
 # Media
 PRODUCT_PACKAGES += \
-    libcodec2_hidl@1.1.vendor:64 \
-    libcodec2_hidl@1.2.vendor:64 \
-    libavservices_minijail_vendor:64 \
-    libstagefright_softomx_plugin.vendor:64 \
-    libsfplugin_ccodec_utils.vendor:64 \
-    libcodec2_soft_common.vendor:64 \
+    libcodec2_hidl@1.1.vendor \
+    libcodec2_hidl@1.2.vendor \
+    libavservices_minijail_vendor \
+    libstagefright_softomx_plugin.vendor \
+    libsfplugin_ccodec_utils.vendor \
+    libcodec2_soft_common.vendor \
     libstagefright_foundation-v33
 
 PRODUCT_COPY_FILES += \
@@ -327,13 +327,13 @@ PRODUCT_PACKAGES += \
 
 # Sensors
 PRODUCT_PACKAGES += \
-    android.frameworks.sensorservice@1.0.vendor:64 \
+    android.frameworks.sensorservice@1.0.vendor \
     android.hardware.sensors-service.xiaomi-multihal \
     libsensorndkbridge \
     libshim_sensors
 
 PRODUCT_PACKAGES += \
-    sensors.dynamic_sensor_hal:64
+    sensors.dynamic_sensor_hal
 
 PRODUCT_COPY_FILES += \
    $(LOCAL_PATH)/configs/hals.conf:$(TARGET_COPY_OUT_VENDOR)/etc/sensors/hals.conf
