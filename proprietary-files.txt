@@ -1704,6 +1704,12 @@ vendor/lib64/hw/gps.default.so
 vendor/lib64/libDR.so
 vendor/lib64/libmnl.so
 
+# HotwordEnrollment
+product/priv-app/HotwordEnrollmentOKGoogleRISCV/HotwordEnrollmentOKGoogleRISCV.apk
+product/priv-app/HotwordEnrollmentXGoogleRISCV/HotwordEnrollmentXGoogleRISCV.apk
+system_ext/etc/permissions/com.android.hotwordenrollment.common.util.xml
+system_ext/framework/com.android.hotwordenrollment.common.util.jar
+
 # Keymint
 vendor/bin/hw/android.hardware.security.keymint@1.0-service.mitee
 vendor/etc/init/android.hardware.security.keymint-service.mitee.rc

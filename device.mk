@@ -161,6 +161,10 @@ PRODUCT_PACKAGES += \
     libhwbinder:64 \
     android.hidl.allocator@1.0.vendor
 
+# HotwordEnrollement app permissions
+PRODUCT_COPY_FILES += \
+    $(LOCAL_PATH)/configs/permissions/privapp-permissions-hotword.xml:$(TARGET_COPY_OUT_PRODUCT)/etc/permissions/privapp-permissions-hotword.xml
+
 # IMS
 PRODUCT_BOOT_JARS += \
     mediatek-common \
