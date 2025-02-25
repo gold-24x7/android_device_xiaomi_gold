@@ -89,6 +89,19 @@ PRODUCT_PACKAGES += \
     com.android.hardware.boot \
     android.hardware.boot-service.default_recovery
 
+# Camera
+PRODUCT_PACKAGES += \
+    android.frameworks.displayservice@1.0.vendor:64 \
+    android.hardware.camera.common@1.0.vendor:64 \
+    android.hardware.camera.device@3.2.vendor:64 \
+    android.hardware.camera.device@3.3.vendor:64 \
+    android.hardware.camera.device@3.4.vendor:64 \
+    android.hardware.camera.device@3.5.vendor:64 \
+    android.hardware.camera.device@3.6.vendor:64 \
+    android.hardware.camera.provider@2.4.vendor:64 \
+    android.hardware.camera.provider@2.5.vendor:64 \
+    android.hardware.camera.provider@2.6.vendor:64
+
 # ConsumerIr
 PRODUCT_PACKAGES += \
     android.hardware.ir-service.example
@@ -290,6 +303,7 @@ PRODUCT_PACKAGES += \
 
 # Sensors
 PRODUCT_PACKAGES += \
+    android.frameworks.sensorservice@1.0.vendor:64 \
     android.hardware.sensors-service.xiaomi-multihal \
     libsensorndkbridge \
     libshim_sensors
