@@ -268,6 +268,9 @@ vendor/etc/audio_param_ce/VoWMicSetting_ParamUnitDesc.xml
 vendor/etc/audio_param_ce/VoWVoiceCommand_AudioParam.xml
 vendor/etc/audio_param_ce/VoWVoiceCommand_ParamUnitDesc.xml
 
+# Battery
+vendor/bin/batterysecret
+
 # Bluetooth
 vendor/bin/hw/android.hardware.bluetooth@1.1-service-mediatek
 vendor/etc/init/android.hardware.bluetooth@1.1-service-mediatek.rc
