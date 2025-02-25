@@ -56,7 +56,8 @@ fi
 function blob_fixup {
     case "$1" in
         vendor/lib*/hw/android.hardware.sensors@2.X-subhal-mediatek.so|\
-        vendor/lib*/libaalservice.so)
+        vendor/lib*/libaalservice.so|\
+        vendor/bin/mnld)
             "$PATCHELF" --add-needed "libshim_sensors.so" "$2"
             ;;
         vendor/etc/init/android.hardware.neuralnetworks@1.3-service-mtk-neuron.rc)
