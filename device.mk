@@ -209,6 +209,7 @@ PRODUCT_PACKAGES += \
     init.mt6833.power.rc \
     init.mt6833.usb.rc \
     init.mtkgki.rc \
+    init.project.rc \
     init.sensor_2_0.rc \
     init.recovery.mt6833.rc \
     ueventd.mt6833.rc
