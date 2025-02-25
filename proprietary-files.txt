@@ -1644,6 +1644,11 @@ vendor/lib64/vendor.mediatek.hardware.pq@2.7.so
 vendor/lib64/vendor.mediatek.hardware.pq@2.8.so
 vendor/lib64/vendor.mediatek.hardware.pq@2.9.so
 
+# Display Firmware
+vendor/firmware/focaltech_ts_fw_CSOT.bin
+vendor/firmware/focaltech_ts_fw_CSOT_mask0x01.bin
+vendor/firmware/focaltech_ts_fw_TianMa.bin
+
 # DRM
 vendor/bin/hw/android.hardware.drm@1.4-service.widevine
 vendor/etc/init/android.hardware.drm@1.4-service.widevine.rc
