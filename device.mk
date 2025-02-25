@@ -115,6 +115,24 @@ PRODUCT_PACKAGES += \
     libhwbinder.vendor \
     android.hidl.allocator@1.0.vendor
 
+# Keymaster
+PRODUCT_PACKAGES += \
+    android.hardware.keymaster@4.0.vendor:64 \
+    libkeymaster_messages.vendor:64 \
+    libkeymaster_portable.vendor:64
+
+# Keymint
+PRODUCT_PACKAGES += \
+    android.hardware.security.keymint-V1-ndk_platform.vendor:64 \
+    android.hardware.security.secureclock-V1-ndk_platform.vendor:64 \
+    android.hardware.security.sharedsecret-V1-ndk_platform.vendor:64 \
+    android.hardware.security.rkp-V1-ndk.vendor:64 \
+    lib_android_keymaster_keymint_utils.vendor:64 \
+    libkeymint.vendor:64
+
+PRODUCT_PACKAGES += \
+    android.hardware.hardware_keystore.xml
+
 # Light
 PRODUCT_PACKAGES += \
     android.hardware.light-service.xiaomi

@@ -392,6 +392,13 @@ vendor/etc/init/fuelgauged_init.rc
 vendor/etc/init/fuelgauged_nvram_init.rc
 vendor/lib64/libfgauge_gm30.so
 
+# Keymint
+vendor/bin/hw/android.hardware.security.keymint@1.0-service.mitee
+vendor/etc/init/android.hardware.security.keymint-service.mitee.rc
+-vendor/etc/vintf/manifest/android.hardware.security.keymint-service.mitee.xml
+-vendor/etc/vintf/manifest/android.hardware.security.secureclock-service.mitee.xml
+-vendor/etc/vintf/manifest/android.hardware.security.sharedsecret-service.mitee.xml
+
 # Neural Networks
 vendor/bin/hw/android.hardware.neuralnetworks@1.3-service-mtk-neuron
 vendor/bin/hw/vendor.mediatek.hardware.mmagent@1.1-service
