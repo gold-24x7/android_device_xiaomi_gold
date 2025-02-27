@@ -1,0 +1,6 @@
+ro.product.odm.brand=Redmi
+ro.product.odm.device=gold
+ro.product.odm.model=2312FRAFDI
+ro.product.odm.name=gold2_in_global
+ro.product.odm.marketname=Redmi Note 13R Pro
+ro.odm.build.fingerprint=Redmi/gold2_in_global/gold:14/UP1A.231005.007/V816.0.15.0.UNQINXM:user/release-keys
