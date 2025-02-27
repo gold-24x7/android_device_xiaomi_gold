@@ -209,7 +209,7 @@ on post-fs-data
     write /proc/bootprof "modprobe: Load_Module_DONE"
 
     # zram
-    swapon_all /vendor/etc/fstab.enableswap
+    swapon_all /vendor/etc/fstab.mt6833
 
     chown system system /mnt/vendor/nvcfg
     chmod 0771 /mnt/vendor/nvcfg
