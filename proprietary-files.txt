@@ -38,6 +38,7 @@ vendor/lib64/libvow_ap_test_dd.so
 vendor/lib64/libvow_ap_test_ha.so
 vendor/lib64/libvow_ap_test_hh.so
 vendor/lib64/libvow_ap_test_nn.so
+vendor/lib64/vendor.mediatek.hardware.audio@6.1.so
 vendor/lib64/vendor.mediatek.hardware.audio@7.1.so
 
 # Audio-configs
@@ -310,6 +311,7 @@ vendor/lib64/hw/vendor.mediatek.hardware.camera.bgservice@1.1-impl.so
 vendor/lib64/hw/vendor.mediatek.hardware.camera.ccap@1.0-impl.so
 vendor/lib64/hw/vendor.mediatek.hardware.camera.isphal@1.0-impl.so
 vendor/lib64/hw/vendor.mediatek.hardware.camera.lomoeffect@1.0-impl.so
+vendor/lib64/hq_algoutils.so
 vendor/lib64/lib3a.ae.core.so
 vendor/lib64/lib3a.ae.so
 vendor/lib64/lib3a.ae.stat.so
@@ -331,6 +333,11 @@ vendor/lib64/lib3a.log.so
 vendor/lib64/lib3a.n3d3a.so
 vendor/lib64/lib3a.sensors.color.so
 vendor/lib64/lib3a.sensors.flicker.so
+vendor/lib64/libanc_single_rt_bokeh.so
+vendor/lib64/libanc_dc_base.so
+vendor/lib64/libanc_fullhdr.so
+vendor/lib64/libanc_night_preview.so
+vendor/lib64/libladder.so
 vendor/lib64/libcamera.custom.pd_buf_mgr.so
 vendor/lib64/libcamera.customae.so
 vendor/lib64/libcamera.customaf.so
@@ -1176,6 +1183,7 @@ vendor/lib64/libimgsensorca.so
 vendor/lib64/libispcameraca.so
 vendor/lib64/libjpeg-alpha-oal_vendor.so
 vendor/lib64/libjpeg-alpha_vendor.so
+vendor/lib64/libgz_uree.so
 vendor/lib64/liblpcnr.so
 vendor/lib64/libmfllcore.so
 vendor/lib64/libmi_bokehpre.so
@@ -1186,6 +1194,9 @@ vendor/lib64/libmialgo_sd.so
 vendor/lib64/libmialgo_utils.so
 vendor/lib64/libmpbase.so
 vendor/lib64/libmsnr.so
+vendor/lib64/libmorpho_ldc_preview.so
+vendor/lib64/libmorpho_video_stabilizer.so
+vendor/lib64/libmorpho_HdrChecker.so
 vendor/lib64/libmtkcam.atmseventmgr.so
 vendor/lib64/libmtkcam.eventcallback.so
 vendor/lib64/libmtkcam.featurepipe.capture.so
@@ -1251,7 +1262,9 @@ vendor/lib64/libmtkcam_sysutils.so
 vendor/lib64/libmtkcam_tuning_utils.so
 vendor/lib64/libmtkcam_ulog.so
 vendor/lib64/libmtkisp_metadata.so
+vendor/lib64/libOpenCL.so
 vendor/lib64/libstereoinfoaccessor_vsdof.so
+vendor/lib64/libTrueSight.so
 vendor/lib64/libvideofilter_only.so
 vendor/lib64/mtkcam/libmtkcam_streaminfo_plugin-p1stt.so
 vendor/lib64/ov08d10_aac_ultra_mipi_raw_IdxMgr.so
@@ -1294,6 +1307,7 @@ vendor/lib64/sc202pcs_aac_macro_mipi_raw_IdxMgr.so
 vendor/lib64/sc202pcs_aac_macro_mipi_raw_tuning.so
 vendor/lib64/sc202pcs_sunny_macro_mipi_raw_IdxMgr.so
 vendor/lib64/sc202pcs_sunny_macro_mipi_raw_tuning.so
+vendor/lib64/libwa_rtdof.so
 vendor/lib64/vendor.mediatek.hardware.camera.atms@1.0.so
 vendor/lib64/vendor.mediatek.hardware.camera.bgservice@1.0.so
 vendor/lib64/vendor.mediatek.hardware.camera.bgservice@1.1.so
@@ -1599,6 +1613,7 @@ vendor/lib64/mt6833/libaiselector.so;SYMLINK=vendor/lib64/libaiselector.so
 vendor/lib64/libaal_cust.so
 vendor/lib64/libaal_key.so
 vendor/lib64/libaal_mtk.so
+vendor/lib64/libaalservice.so
 vendor/lib64/libgpudataproducer.so
 vendor/lib64/libpq_cust_base.so
 vendor/lib64/libpqparamparser.so
@@ -1610,6 +1625,7 @@ vendor/lib64/libappgamepq.so
 vendor/lib64/libcomposer_ext.so
 vendor/lib64/libgpu_aux.so
 vendor/lib64/libgpud.so
+vendor/lib64/libged.so
 vendor/lib64/libgralloctypes_mtk.so
 vendor/lib64/libgralloc_extra.so
 vendor/lib64/libgralloc_metadata.so
