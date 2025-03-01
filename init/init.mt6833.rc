@@ -55,6 +55,10 @@ on init
     write /proc/sys/net/core/wmem_max 8388608
     write /proc/sys/net/core/rmem_max 8388608
 
+# Logger
+    start boot_log
+    start boot_log_crash
+    start boot_log_kernel
 
 on late-init
     write /proc/bootprof "INIT:late-init"
@@ -181,6 +185,11 @@ on post-fs
 
     # allow ccci_mdinit access ccci_dump
     chown root system /proc/ccci_dump
+
+    # Logger
+    start boot_log
+    start boot_log_crash
+    start boot_log_kernel
 
 on post-fs-data
     write /proc/bootprof "INIT:post-fs-data"
@@ -705,6 +714,11 @@ on post-fs-data
     chmod 0664 sys/kernel/debug/rt-regmap/mt6360_ldo.5-0064/reg_addr
     chmod 0664 sys/kernel/debug/rt-regmap/mt6360-4e/reg_addr
 
+    # Logger
+    start boot_log
+    start boot_log_crash
+    start boot_log_kernel
+
 # N17 code for HQ-292483 by shenzhengang at 2023/05/06 start
     start mi_thermald
     chown system system /sys/class/thermal/thermal_message/sconfig
@@ -734,6 +748,11 @@ on zygote-start
 on early-boot
     write /proc/bootprof "INIT:early-boot"
     verity_update_state
+
+    # Logger
+    start boot_log
+    start boot_log_crash
+    start boot_log_kernel
 
 on boot
     write /proc/bootprof "INIT:boot"
@@ -1205,4 +1224,37 @@ service mi_thermald /system/vendor/bin/mi_thermald
     seclabel u:r:mi_thermald:s0
 # N17 code for HQ-292483 by shenzhengang at 2023/05/06 end
 
+# Logger
+service boot_log /system/bin/logcat -b all -D -f /metadata/boot_log_full.txt
+    class main
+    user root
+    group root system
+    disabled
+    oneshot
 
+service boot_log_crash /system/bin/logcat -b crash -D -f /metadata/boot_log_crash.txt
+    class main
+    user root
+    group root system
+    disabled
+    oneshot
+
+service boot_log_kernel /system/bin/logcat -b kernel -D -f /metadata/boot_log_kernel.txt
+    class main
+    user root
+    group root system
+    disabled
+    oneshot
+
+
+
+on post-fs-data
+    # Clear existing log and start the service
+    rm /metadata/boot_log.txt
+    start boot_log
+
+on property:sys.boot_completed=1
+# Stop the logger service
+    stop boot_log
+    stop boot_log_crash
+    stop boot_log_kernel
