@@ -87,6 +87,7 @@ function blob_fixup {
 	    grep -q "mediatek-64b" "${2}" || sed -i 's/mediatek/mediatek-64b/' "${2}"
 	    ;;
         vendor/lib*/libmtkcam_stdutils.so|\
+        vendor/lib64/hw/hwcomposer.mt6833.so|\
         vendor/lib64/hw/android.hardware.camera.provider@2.6-impl-mediatek.so|\
         vendor/bin/hw/android.hardware.graphics.composer@2.3-service)
             "${PATCHELF}" --replace-needed "libutils.so" "libutils-v32.so" "$2"
