@@ -1779,6 +1779,7 @@ vendor/lib64/mt6833/libnir_neon_driver.so;SYMLINK=vendor/lib64/libnir_neon_drive
 vendor/lib64/libneuron_adapter.so
 vendor/lib64/libneuron_platform.so
 vendor/lib64/libneuron_runtime.6.so
+vendor/lib64/libneuropilot_hal_utils.so
 vendor/lib64/libtextclassifier_hash.so
 vendor/lib64/vendor.mediatek.hardware.apuware.utils@2.0.so
 vendor/lib64/vendor.mediatek.hardware.mmagent@1.0.so
@@ -1839,7 +1840,6 @@ vendor/lib64/libmtkcutils.so
 vendor/lib64/libmtk-fusion-ril-prop-vsim.so
 vendor/lib64/libmtkhardware_legacy.so
 vendor/lib64/libmtkmipc-ril.so
-vendor/lib64/libmtkmipc-rilop.so
 vendor/lib64/libmtknetcap.so
 vendor/lib64/libmtknetutils.so
 vendor/lib64/libmtkproperty.so
