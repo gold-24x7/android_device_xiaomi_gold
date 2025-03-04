@@ -97,12 +97,16 @@
     ],
     "CoolingDevices":[
         {
-            "Name":"thermal-cpufreq-0",
-            "Type":"CPU"
+            "Name":"mtk-cl-bcct00",
+            "Type":"BATTERY"
         },
         {
-            "Name":"thermal-cpufreq-1",
-            "Type":"CPU"
+            "Name":"mtk-cl-bcct01",
+            "Type":"BATTERY"
+        },
+        {
+            "Name":"mtk-cl-bcct02",
+            "Type":"BATTERY"
         },
         {
             "Name":"mtktscpu-sysrst",
