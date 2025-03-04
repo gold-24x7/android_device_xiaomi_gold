@@ -106,7 +106,9 @@ PRODUCT_PACKAGES += \
     android.hardware.camera.provider@2.6.vendor
 
 PRODUCT_PACKAGES += \
-    libcamera_metadata.vendor
+    libcamera_metadata.vendor \
+    libexif \
+    libexif.vendor
 
 # Cgroup
 PRODUCT_COPY_FILES += \
