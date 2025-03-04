@@ -52,7 +52,7 @@ PRODUCT_AAPT_PREF_CONFIG := xxhdpi
 $(call soong_config_set,android_hardware_audio,run_64bit,true)
 
 PRODUCT_PACKAGES += \
-    android.hardware.audio@7.1-impl \
+    android.hardware.audio@7.0-impl \
     android.hardware.audio.effect@7.0-impl \
     android.hardware.soundtrigger@2.3-impl \
     android.hardware.audio.service
@@ -118,7 +118,7 @@ PRODUCT_PACKAGES += \
 
 # Display
 PRODUCT_PACKAGES += \
-    android.hardware.graphics.composer@2.3-service \
+    android.hardware.graphics.composer@2.1-service \
     android.hardware.memtrack-service.mediatek-mali
 
 PRODUCT_PACKAGES += \
