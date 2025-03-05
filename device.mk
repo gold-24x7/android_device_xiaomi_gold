@@ -254,6 +254,11 @@ PRODUCT_PACKAGES += \
     init.insmod.sh \
     init.insmod.mt6833.cfg
 
+# Neural Network
+PRODUCT_PACKAGES += \
+    android.hardware.neuralnetworks@1.0 \
+    android.hardware.neuralnetworks@1.0.vendor
+
 # Overlays
 PRODUCT_PACKAGES += \
     CarrierConfigOverlayGold \
