@@ -1194,6 +1194,7 @@ vendor/lib64/libmialgo_sd.so
 vendor/lib64/libmialgo_utils.so
 vendor/lib64/libmpbase.so
 vendor/lib64/libmsnr.so
+vendor/lib64/libmorpho_Ldc.so
 vendor/lib64/libmorpho_ldc_preview.so
 vendor/lib64/libmorpho_video_stabilizer.so
 vendor/lib64/libmorpho_HdrChecker.so
@@ -1850,6 +1851,7 @@ vendor/lib64/libmtktinyxml.so
 vendor/lib64/libmtkutils.so
 vendor/lib64/libratconfig.so
 vendor/lib64/librilfusion.so
+vendor/lib64/librpc.so
 vendor/lib64/libstorage_otp.so
 vendor/lib64/libsysenv.so
 vendor/lib64/libtrm.so
