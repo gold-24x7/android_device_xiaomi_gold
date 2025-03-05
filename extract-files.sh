@@ -70,6 +70,9 @@ function blob_fixup {
         vendor/bin/mnld)
             "$PATCHELF" --add-needed "libshim_sensors.so" "$2"
             ;;
+        vendor/lib64/libvendor.xiaomi.hardware.fx.tunnel@1.0.so)
+            "$PATCHELF" --replace-needed "libhidlbase.so" "libhidlbase_shim.so" "$2"
+            ;;
         vendor/etc/init/android.hardware.neuralnetworks@1.3-service-mtk-neuron.rc)
             sed -i 's/start/enable/' "$2"
             ;;
