@@ -1656,6 +1656,17 @@ vendor/lib64/vendor.mediatek.hardware.pq@2.7.so
 vendor/lib64/vendor.mediatek.hardware.pq@2.8.so
 vendor/lib64/vendor.mediatek.hardware.pq@2.9.so
 
+# Display Configs
+vendor/etc/cust_color_dsi_n17_36_02_0a_dsc_vdo.xml
+vendor/etc/cust_color_dsi_n17_36_0f_0c_dsc_vdo.xml
+vendor/etc/cust_color_dsi_n17_42_0d_0b_dsc_vdo.xml
+vendor/etc/dsi_n17_36_02_0a_dsc_vdo_cn_mi.xml
+vendor/etc/dsi_n17_36_02_0a_dsc_vdo_gl_mi.xml
+vendor/etc/dsi_n17_36_0f_0c_dsc_vdo_cn_mi.xml
+vendor/etc/dsi_n17_36_0f_0c_dsc_vdo_gl_mi.xml
+vendor/etc/dsi_n17_42_0d_0b_dsc_vdo_cn_mi.xml
+vendor/etc/dsi_n17_42_0d_0b_dsc_vdo_gl_mi.xml
+
 # Display Firmware
 vendor/firmware/focaltech_ts_fw_CSOT.bin
 vendor/firmware/focaltech_ts_fw_CSOT_mask0x01.bin
